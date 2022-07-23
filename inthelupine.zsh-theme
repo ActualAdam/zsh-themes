@@ -9,7 +9,7 @@ fi
 
 PROMPT='
 %{$fg_bold[grey]%}[%{$reset_color%}%{$fg_bold[${host_color}]%}%n@%m%{$reset_color%}%{$fg_bold[grey]%}]%{$reset_color%} %{$fg_bold[blue]%}%10c%{$reset_color%} $(git_prompt_info) $(git_remote_status)
-%{$fg_bold[cyan]%}❯%{$reset_color%} '
+%{$fg_bold[blue]%}❯%{$reset_color%} '
 
 
 RPROMPT='${return_status}%{$reset_color%}'
