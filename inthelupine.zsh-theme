@@ -7,9 +7,12 @@ if [ -n "$SSH_CLIENT" ]; then
   local host_color="red"
 fi
 
-PROMPT='
-%{$fg_bold[grey]%}[%{$reset_color%}%{$fg_bold[${host_color}]%}%n@%m%{$reset_color%}%{$fg_bold[grey]%}]%{$reset_color%} %F{blue}%10c%{$reset_color%} $(git_prompt_info) $(git_remote_status)
-%{$fg_bold[blue]%}❯%{$reset_color%} '
+local user_host_display="%F{grey}%B[%b%n@%F{$host_color}%m%F{grey}%B]%b%f"
+local pwd_display="%F{blue}%10c%f"
+
+PROMPT="
+$user_host_display $pwd_display \$(git_prompt_info) \$(git_remote_status)
+%F{blue}❯%f "
 
 
 RPROMPT='${return_status}%{$reset_color%}'
