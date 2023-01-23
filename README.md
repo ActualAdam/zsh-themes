@@ -1,3 +1,6 @@
-# ahoy-hoy-zsh
+# zsh-themes
 
-A zsh theme to suit my own evolving needs. I'm starting with https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/intheloop.zsh-theme and we'll see where it goes.
+Zsh themes I have customized for myself.
+
+## inthelupine.zsh-theme
+based on https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/intheloop.zsh-theme.
